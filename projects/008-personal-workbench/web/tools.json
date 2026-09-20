@@ -1,0 +1,52 @@
+{
+  "tools": [
+    {
+      "id": "collector",
+      "name": "多平台采集",
+      "icon": "🧭",
+      "panel": "panels/collector.js"
+    },
+    {
+      "id": "xhs-crawler",
+      "name": "小红书评论",
+      "icon": "📕",
+      "panel": "panels/xhs-crawler.js"
+    },
+    {
+      "id": "xhs-viz",
+      "name": "评论数据",
+      "icon": "📊",
+      "panel": "panels/xhs-viz.js"
+    },
+    {
+      "id": "video",
+      "name": "视频生成",
+      "icon": "🎬",
+      "panel": "panels/video.js"
+    },
+    {
+      "id": "template-preview",
+      "name": "模板实时预览",
+      "icon": "🎛️",
+      "panel": "panels/template-preview.js"
+    },
+    {
+      "id": "assets",
+      "name": "素材预览器",
+      "icon": "🧩",
+      "panel": "panels/assets.js"
+    },
+    {
+      "id": "sessions",
+      "name": "会话管家",
+      "icon": "💬",
+      "panel": "panels/sessions.js"
+    },
+    {
+      "id": "changelog",
+      "name": "更新日志",
+      "icon": "📋",
+      "panel": "panels/changelog.js"
+    }
+  ]
+}

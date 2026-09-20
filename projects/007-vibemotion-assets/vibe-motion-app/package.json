@@ -1,0 +1,46 @@
+{
+  "name": "vibe-motion-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "postinstall": "node scripts/remotion-ensure-browser.mjs",
+    "remotion:ensure-browser": "node scripts/remotion-ensure-browser.mjs",
+    "remotion:studio": "node scripts/remotion-cli.mjs studio",
+    "remotion:bundle": "node scripts/remotion-cli.mjs bundle",
+    "remotion:compositions": "node scripts/remotion-cli.mjs compositions",
+    "remotion:render": "node scripts/remotion-render.mjs",
+    "remotion:render:demo": "REMOTION_OUTPUT=out/motion-defaults-transparent.mov REMOTION_PROPS_FILE=motion/render-presets/default.json pnpm run remotion:render",
+    "dev": "pnpm run remotion:studio",
+    "build": "pnpm run remotion:bundle",
+    "lint": "eslint .",
+    "verify": "pnpm run lint && pnpm run remotion:compositions"
+  },
+  "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@remotion/cli": "4.0.438",
+    "@remotion/media-utils": "4.0.438",
+    "@remotion/studio": "4.0.438",
+    "@remotion/tailwind-v4": "4.0.438",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.438",
+    "tailwindcss": "^4.1.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@babel/parser": "7.24.1",
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.0.0"
+  }
+}

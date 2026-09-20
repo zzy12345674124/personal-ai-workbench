@@ -1,0 +1,11 @@
+{
+  "title": "Vibe Motion Demo",
+  "subtitle": "Replace this scene with your own component and animation timeline.",
+  "badgeText": "Vibe Motion",
+  "cardDarkMode": false,
+  "videoWidth": 1080,
+  "videoHeight": 1440,
+  "durationSeconds": 3,
+  "speed": 1,
+  "cardTiltMax": 12
+}

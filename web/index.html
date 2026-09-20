@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人工作台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" aria-label="个人工作台">
+      <span class="brand-mark" aria-hidden="true">W</span>
+      <span class="brand-copy">
+        <strong class="logo" id="logo">个人工作台</strong>
+        <small>Personal Workbench</small>
+      </span>
+    </div>
+    <div class="topbar-actions">
+      <button class="topbar-btn" id="btnRefresh" title="刷新当前面板（不整页刷新）" aria-label="刷新当前面板">↻</button>
+      <span class="status-pill"><span class="status-dot" id="statusDot" title="公开浏览模式"></span><span>浏览模式</span></span>
+    </div>
+  </header>
+  <aside class="sidebar">
+    <div class="sidebar-heading"><span>工作区</span><small>008</small></div>
+    <nav id="toolNav"></nav>
+    <div class="sidebar-footer"><span class="sidebar-footer-dot"></span>真实界面 · 操作安全关闭</div>
+  </aside>
+  <main class="stage" id="stage">
+    <div class="placeholder" id="stagePlaceholder">从左侧选择一个工具</div>
+  </main>
+  <div id="navHost"></div>
+  <div id="fabHost"></div>
+  <div id="welcomeHost"></div>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/scramble.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

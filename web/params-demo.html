@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>参数化演示素材</title>
+<style>
+  body { margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh;
+         font-family: system-ui, "Microsoft YaHei", sans-serif; background: #0B0C15; }
+  .card { text-align: center; padding: 40px 60px; border-radius: 24px;
+          background: var(--bg, #141829); color: var(--fg, #fff);
+          border: 2px solid var(--accent, #63EAFF); box-shadow: 0 14px 44px rgba(0,0,0,.4); }
+  h1 { margin: 0 0 12px; font-size: 44px; }
+  p { margin: 0; font-size: 22px; opacity: .85; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="title">参数化素材演示</h1>
+    <p id="sub">用右侧参数面板改我</p>
+  </div>
+  <script>
+    // 2026-08-08 轻量版参数化链路验证：读取 URL 参数并应用到画面
+    const q = new URLSearchParams(location.search);
+    const title = q.get('title') || '参数化素材演示';
+    const sub = q.get('sub') || '用右侧参数面板改我';
+    const bg = q.get('bg') || '#141829';
+    const fg = q.get('fg') || '#FFFFFF';
+    const accent = q.get('accent') || '#63EAFF';
+    document.getElementById('title').textContent = title;
+    document.getElementById('sub').textContent = sub;
+    document.body.style.setProperty('--bg', bg);
+    document.body.style.setProperty('--fg', fg);
+    document.body.style.setProperty('--accent', accent);
+  </script>
+</body>
+</html>

@@ -1,0 +1,556 @@
+{
+  "anonymized": true,
+  "sampleOnly": true,
+  "notice": "评论样本仅用于项目展示与研究，不随 MIT 软件许可证授权再次传播。",
+  "identityFieldsRemoved": [
+    "author_display_name",
+    "content_id",
+    "comment_id",
+    "parent_comment_id",
+    "job_id",
+    "platform_extra"
+  ],
+  "count": 60,
+  "comments": [
+    {
+      "id": "comment-0001",
+      "text": "绿龙打得过菊花，猎鹰打得过绿龙，那为什么猎鹰打不过菊花🤔",
+      "likes": 111,
+      "publishedAt": "2026-08-24T00:36:34+00:00",
+      "province": "福建",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0002",
+      "text": "猎鹰本质神队，上能斩蜂灭龙问鼎科隆，下你别管。其实legacy也不弱，看个人发挥的。",
+      "likes": 237,
+      "publishedAt": "2026-08-24T00:46:53+00:00",
+      "province": "北京",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0003",
+      "text": "猎鹰又不是能一直打赢绿龙，也不是会一直输菊花",
+      "likes": 194,
+      "publishedAt": "2026-08-24T01:07:23+00:00",
+      "province": "湖北",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0004",
+      "text": "恭喜绿龙夺冠，donk一场不红太狠了",
+      "likes": 1163,
+      "publishedAt": "2026-08-23T18:06:18+00:00",
+      "province": "江西",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0005",
+      "text": "依旧绿巨人[笑哭]",
+      "likes": 350,
+      "publishedAt": "2026-08-23T19:21:16+00:00",
+      "province": "重庆",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0006",
+      "text": "一图不红的还有一位",
+      "likes": 98,
+      "publishedAt": "2026-08-23T20:39:33+00:00",
+      "province": "广东",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0007",
+      "text": "火力值放在这个位置真是拉完了，还不如就左上角一个数字。",
+      "likes": 2,
+      "publishedAt": "2026-08-24T11:00:14+00:00",
+      "province": "四川",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0008",
+      "text": "Fut太克制洞了，枪法好，补枪非常快，几乎不给洞多杀的机会，导致洞拿了非常多的首杀但还是转不起来，到了核子就原形毕露了[笑哭]",
+      "likes": 428,
+      "publishedAt": "2026-08-23T17:50:52+00:00",
+      "province": "四川",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0009",
+      "text": "的确，dem0n貌似对位打了个18:12，另外fut核子就没怎么赢过",
+      "likes": 113,
+      "publishedAt": "2026-08-23T17:54:50+00:00",
+      "province": "浙江",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0010",
+      "text": "有点像上回的pr，xelex。。不过这次状态还是好很多",
+      "likes": 66,
+      "publishedAt": "2026-08-23T17:53:24+00:00",
+      "province": "河南",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0011",
+      "text": "donk的数据没以前炸裂了啊，以前6个数据最少都有4个是best，这次就2个",
+      "likes": 54,
+      "publishedAt": "2026-08-24T01:19:30+00:00",
+      "province": "湖北",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0012",
+      "text": "剩下有四个best的那个在哪发财呢[笑哭]",
+      "likes": 152,
+      "publishedAt": "2026-08-24T01:31:56+00:00",
+      "province": "广东",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0013",
+      "text": "打的图太多了，rating第一的小孩只有七张图",
+      "likes": 112,
+      "publishedAt": "2026-08-24T01:21:08+00:00",
+      "province": "辽宁",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0014",
+      "text": "感觉载物top1不稳了",
+      "likes": 27,
+      "publishedAt": "2026-08-24T02:40:22+00:00",
+      "province": "浙江",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0015",
+      "text": "蜂美别着急，donk现在差了载大哥两个mvp和三个冠军，可能数据好一点，但小驴要抢载大哥top1必须在仅剩的四个赛事里拿下一个t1冠军和major来配平载物的克拉科夫。难度很大啊",
+      "likes": 193,
+      "publishedAt": "2026-08-24T02:47:53+00:00",
+      "province": "陕西",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0016",
+      "text": "现在看看京介能成长成啥样了，不然未来还是只有小孩能和donk拼一拼",
+      "likes": 130,
+      "publishedAt": "2026-08-23T17:55:20+00:00",
+      "province": "浙江",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0017",
+      "text": "先过了暮年载大哥再说吧，不然孩到老也差洞一档",
+      "likes": 319,
+      "publishedAt": "2026-08-23T18:15:34+00:00",
+      "province": "河北",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0018",
+      "text": "似串子不要给孩孩招黑了😭龙美也不要骂孩孩了，确实没有小驴厉害，不要因为串子攻击选手😭那他娘的七张图也不是孩孩只想打七张图啊，口下留情求求了",
+      "likes": 19,
+      "publishedAt": "2026-08-24T10:07:23+00:00",
+      "province": "江西",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0019",
+      "text": "donk和zywoo、m0nsey的游戏难度完全不一样。如果不了解donk的位置有多难打，那就去打一个赛季的纯粹突破手，看看rating能掉成什么样。",
+      "likes": 130,
+      "publishedAt": "2026-08-24T03:48:09+00:00",
+      "province": "陕西",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0020",
+      "text": "确实，突破手手感容易被打没，然后就开始研发[笑哭]",
+      "likes": 43,
+      "publishedAt": "2026-08-24T05:00:55+00:00",
+      "province": "湖南",
+      "platform": "bilibili",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0184",
+      "text": "codex 前端做的无比之丑 咋整啊",
+      "likes": 14,
+      "publishedAt": "2026-05-26T10:33:10+00:00",
+      "province": "山东",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0185",
+      "text": "codex安装",
+      "likes": 1,
+      "publishedAt": "2026-07-09T01:41:13+00:00",
+      "province": "贵州",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0186",
+      "text": "挑战帮路人用上codex",
+      "likes": 2,
+      "publishedAt": "2026-08-17T10:20:30+00:00",
+      "province": "山东",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0187",
+      "text": "可以帮人安装codex奥[看]",
+      "likes": 2,
+      "publishedAt": "2026-08-15T15:34:04+00:00",
+      "province": "河北",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0188",
+      "text": "挑战让100人用上 codex，（38/100）[呆无辜]",
+      "likes": 0,
+      "publishedAt": "2026-08-22T12:24:34+00:00",
+      "province": "湖南",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0189",
+      "text": "99%的新手看完还是不会，因为他连codex官网都打不开，重要最重要，网络从来不提，也没法提，但是给新手造成了无比的困扰[杀马特]",
+      "likes": 145,
+      "publishedAt": "2026-07-08T04:53:45+00:00",
+      "province": "陕西",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0190",
+      "text": "当你离不开codex时，你的钱包就开始羞涩了[捂脸]",
+      "likes": 221,
+      "publishedAt": "2026-06-22T06:41:49+00:00",
+      "province": "广东",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0191",
+      "text": "可以考虑apikey，我用了一个很便宜的，有保障还很实惠还不参水，已经续费，挺好使的",
+      "likes": 77,
+      "publishedAt": "2026-06-24T02:59:06+00:00",
+      "province": "山东",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0192",
+      "text": "挑战让100人学会codex（26/100）",
+      "likes": 6,
+      "publishedAt": "2026-08-10T01:12:00+00:00",
+      "province": "浙江",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0193",
+      "text": "codex是什么都不知道，落后程度随着发展指数级增长。好无奈得崩溃。",
+      "likes": 39,
+      "publishedAt": "2026-07-29T04:17:30+00:00",
+      "province": "江西",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0194",
+      "text": "害我一激灵，我也以为codex完全开源了[无语流汗][无语流汗][无语流汗]",
+      "likes": 1,
+      "publishedAt": "2026-08-21T17:43:47+00:00",
+      "province": "贵州",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0195",
+      "text": "对的吓我一跳[捂脸]",
+      "likes": 0,
+      "publishedAt": "2026-08-22T02:03:29+00:00",
+      "province": "四川",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0196",
+      "text": "吓得我马上去看了一下我的PLUS会员退没退钱[看]",
+      "likes": 1,
+      "publishedAt": "2026-08-22T02:15:46+00:00",
+      "province": "山东",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0197",
+      "text": "开源了“汽车外壳”，但是发动机（Codex模型）不给你。",
+      "likes": 1,
+      "publishedAt": "2026-08-22T02:39:39+00:00",
+      "province": "广西",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0198",
+      "text": "就是玩了个概念，对冲deep seek",
+      "likes": 1,
+      "publishedAt": "2026-08-22T10:34:17+00:00",
+      "province": "广东",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0199",
+      "text": "现在有免费不限量的牛来大模型，sol只用来做计划和审查，干活就用OX跑",
+      "likes": 0,
+      "publishedAt": "2026-08-22T08:23:02+00:00",
+      "province": "江苏",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0200",
+      "text": "多少？200亿？！token！",
+      "likes": 30,
+      "publishedAt": "2026-08-21T12:39:11+00:00",
+      "province": "河北",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0201",
+      "text": "这两天一直5.5mini有办法解决吗",
+      "likes": 2,
+      "publishedAt": "2026-08-21T13:24:41+00:00",
+      "province": "湖北",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0202",
+      "text": "骰子，平时常用的也是5.6luna嘛，以前pro5.5随便用，现在5.6了，只用terra都感觉撑不了一周",
+      "likes": 3,
+      "publishedAt": "2026-08-21T16:08:23+00:00",
+      "province": "江苏",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0203",
+      "text": "额度多的时候用sol，平时都用luna-max [憨笑]确实不太够撑，不够的时候就靠聊天来撑，或者看看文献干别的",
+      "likes": 0,
+      "publishedAt": "2026-08-21T17:22:15+00:00",
+      "province": "江苏",
+      "platform": "douyin",
+      "keyword": "codex"
+    },
+    {
+      "id": "comment-0304",
+      "text": "怎么下载",
+      "likes": 0,
+      "publishedAt": "2026-07-10T06:02:10+00:00",
+      "province": "安徽",
+      "platform": "xiaohongshu",
+      "keyword": "教材"
+    },
+    {
+      "id": "comment-0305",
+      "text": "怎么下载",
+      "likes": 0,
+      "publishedAt": "2026-06-30T13:46:04+00:00",
+      "province": "江苏",
+      "platform": "xiaohongshu",
+      "keyword": "教材"
+    },
+    {
+      "id": "comment-0306",
+      "text": "不带物理书这块",
+      "likes": 2,
+      "publishedAt": "2026-02-14T08:49:38+00:00",
+      "province": "江苏",
+      "platform": "xiaohongshu",
+      "keyword": "教材"
+    },
+    {
+      "id": "comment-0307",
+      "text": "有中国人参加的也就王者拿了个亚军",
+      "likes": 64,
+      "publishedAt": "2026-08-23T03:38:26+00:00",
+      "province": "河北",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0308",
+      "text": "如果放宽到中国人的话，昨天晚上cf白鲨刚拿了冠军[doge]",
+      "likes": 111,
+      "publishedAt": "2026-08-23T03:43:01+00:00",
+      "province": "江苏",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0309",
+      "text": "冷知识:AL有两个香克斯[doge]",
+      "likes": 151,
+      "publishedAt": "2026-08-23T04:42:55+00:00",
+      "province": "安徽",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0310",
+      "text": "一个香克斯一个臭克斯",
+      "likes": 92,
+      "publishedAt": "2026-08-23T06:18:53+00:00",
+      "province": "广东",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0311",
+      "text": "全靠国外分部拿分，国内分部拿到分没[笑哭R]",
+      "likes": 26,
+      "publishedAt": "2026-08-23T04:25:54+00:00",
+      "province": "广东",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0312",
+      "text": "这是俱乐部，不是国家队[doge]，俱乐部国际化是趋势，去年因为没有国际化，国内拿了几个冠军还亚军也才第六",
+      "likes": 176,
+      "publishedAt": "2026-08-23T05:55:06+00:00",
+      "province": "陕西",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0313",
+      "text": "这个比赛结束吗？[笑哭R][笑哭R][笑哭R]",
+      "likes": 2,
+      "publishedAt": "2026-08-23T02:31:26+00:00",
+      "province": "湖南",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0314",
+      "text": "它是有一堆不同的游戏，每个游戏时间不一样",
+      "likes": 47,
+      "publishedAt": "2026-08-23T02:55:17+00:00",
+      "province": "上海",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0315",
+      "text": "niko全责[doge]",
+      "likes": 11,
+      "publishedAt": "2026-08-23T04:00:06+00:00",
+      "province": "福建",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0316",
+      "text": "不止niko，ow分部直接12强离场了[笑哭R]",
+      "likes": 39,
+      "publishedAt": "2026-08-23T04:32:51+00:00",
+      "province": "浙江",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0317",
+      "text": "plq有些人要理解俱乐部不是国家队，是商业性质的。俱乐部是用商业模式获得奖金和收益，不是通过国籍获得荣誉的。这个电竞世界杯也不是足球的世界杯，是以俱乐部为单位参赛的。",
+      "likes": 31,
+      "publishedAt": "2026-08-23T07:33:47+00:00",
+      "province": "湖北",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0318",
+      "text": "理解成世俱杯就对了",
+      "likes": 0,
+      "publishedAt": "2026-08-23T08:25:29+00:00",
+      "province": "福建",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0319",
+      "text": "猎鹰cs全责[捂脸R]",
+      "likes": 8,
+      "publishedAt": "2026-08-23T06:40:14+00:00",
+      "province": "湖南",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0320",
+      "text": "咋了",
+      "likes": 0,
+      "publishedAt": "2026-08-23T14:41:46+00:00",
+      "province": "河北",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0321",
+      "text": "大家都在笑话王者，笑话LOL，笑话穿越火线。其实和平精英才真是区到家了，提前练习了很久的外服，决赛能进16个都没进去[捂脸R]",
+      "likes": 3,
+      "publishedAt": "2026-08-23T12:06:15+00:00",
+      "province": "河北",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0322",
+      "text": "猎鹰这集有点闹麻了 ewc纯属猎鹰定制冠军都没拿到",
+      "likes": 1,
+      "publishedAt": "2026-08-23T22:40:46+00:00",
+      "province": "加拿大",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    },
+    {
+      "id": "comment-0323",
+      "text": "我想知道其他项目都是啥，感觉没多热门的样子[暗中观察R]",
+      "likes": 0,
+      "publishedAt": "2026-08-23T18:06:32+00:00",
+      "province": "北京",
+      "platform": "xiaohongshu",
+      "keyword": "ewc"
+    }
+  ]
+}

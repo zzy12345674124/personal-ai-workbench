@@ -1,0 +1,16 @@
+{
+  "videoGeneration": {
+    "enabled": false,
+    "baseUrl": "https://your-provider.example/v1",
+    "apiKeyEnv": "VIDEO_LLM_API_KEY",
+    "model": "your-video-workflow-model",
+    "timeoutMs": 60000
+  },
+  "dataCrawling": {
+    "enabled": false,
+    "baseUrl": "https://your-provider.example/v1",
+    "apiKeyEnv": "CRAWLER_LLM_API_KEY",
+    "model": "your-crawler-workflow-model",
+    "timeoutMs": 60000
+  }
+}

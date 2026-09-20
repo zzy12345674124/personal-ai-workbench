@@ -1,0 +1,23 @@
+{
+  "name": "personal-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "server": "node server/server.js",
+    "test": "vitest run",
+    "test:collector-python": "runtime\\collector-python\\python.exe -B -m unittest discover -s tests/collector_py -p test_*.py",
+    "verify": "npm test && npm run test:collector-python",
+    "comments:sync": "node scripts/sync-comments.js",
+    "collaboration:init": "node scripts/run-collaboration.js --init",
+    "collaboration:status": "node scripts/run-collaboration.js --status",
+    "collaboration:resume": "node scripts/run-collaboration.js --resume-claude",
+    "collaboration:extend": "node scripts/run-collaboration.js --extend-rounds 1",
+    "collaboration:dry-run": "node scripts/run-collaboration.js --dry-run",
+    "collaboration:watch": "node scripts/run-collaboration.js --watch"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.7",
+    "vitest": "^4.1.10"
+  }
+}

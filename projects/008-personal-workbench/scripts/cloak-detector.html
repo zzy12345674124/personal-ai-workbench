@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><title>CloakBrowser 本地指纹检测</title></head>
+<body>
+<pre id="out"></pre>
+<script>
+// 本地指纹检测：真浏览器应该全绿；自动化浏览器（webdriver/缺 chrome 对象）会暴露
+const out = {};
+try { out.webdriver = String(navigator.webdriver); } catch (e) { out.webdriver = 'err'; }
+try { out.userAgent = navigator.userAgent; } catch (e) { out.userAgent = 'err'; }
+try { out.hasChrome = String(typeof window.chrome === 'object' && !!(window.chrome && window.chrome.csi)); } catch (e) { out.hasChrome = 'err'; }
+try { out.pluginsLength = String(navigator.plugins.length); } catch (e) { out.pluginsLength = 'err'; }
+try { out.permissions = String(typeof navigator.permissions === 'object'); } catch (e) { out.permissions = 'err'; }
+try { out.languages = String(navigator.languages); } catch (e) { out.languages = 'err'; }
+try { out.webglVendor = String((() => { try { const c = document.createElement('canvas').getContext('webgl'); const d = c.getExtension('WEBGL_debug_renderer_info'); return d ? c.getParameter(d.UNMASKED_VENDOR_WEBGL) : 'no-ext'; } catch (e) { return 'err'; } })()); } catch (e) { out.webglVendor = 'err'; }
+try { out.hardwareConcurrency = String(navigator.hardwareConcurrency); } catch (e) { out.hardwareConcurrency = 'err'; }
+document.getElementById('out').textContent = JSON.stringify(out, null, 2);
+</script>
+</body>
+</html>

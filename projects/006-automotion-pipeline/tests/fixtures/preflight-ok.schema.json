@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ok", "message"],
+  "properties": {
+    "ok": {
+      "type": "boolean",
+      "const": true
+    },
+    "message": {
+      "type": "string",
+      "const": "automotion-preflight"
+    }
+  }
+}

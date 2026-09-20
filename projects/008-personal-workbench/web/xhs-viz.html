@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小红书评论数据 · 可视化</title>
+<style>
+body { margin:0; background:#f5f5f7; color:#0b0b0b; font-family:-apple-system,'Segoe UI','Microsoft YaHei',sans-serif; }
+.viz-root { max-width:1100px; margin:0 auto; padding:32px 24px 60px; color-scheme:light;
+  --surface-1:#fcfcfb; --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#8a8a86;
+  --series-1:#2a78d6; --series-2:#eb6834; --series-3:#1baf7a; --series-other:#8a9aa5; --grid:#e6e6e2; }
+h1 { font-size:28px; margin:0 0 4px; letter-spacing:-.02em; color:var(--text-primary); }
+.sub { color:var(--text-muted); font-size:14px; margin-bottom:18px; }
+.filters { display:flex; gap:10px; align-items:center; margin-bottom:22px; flex-wrap:wrap; }
+.filters select { min-height:36px; padding:6px 12px; border:1px solid #d8d8dc; border-radius:11px;
+  background:#fff; color:var(--text-primary); font-size:14px; }
+.hero { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-bottom:28px; }
+.stat { background:var(--surface-1); border:1px solid #e3e3df; border-radius:16px; padding:18px 20px; }
+.stat .num { font-size:34px; font-weight:700; letter-spacing:-.03em; color:var(--text-primary); }
+.stat .label { color:var(--text-secondary); font-size:12.5px; margin-top:4px; }
+.cost-note { color:var(--text-secondary); font-size:13px; margin:14px 2px 30px; line-height:1.7; }
+.cost-note b { color:var(--text-primary); }
+.card { background:var(--surface-1); border:1px solid #e3e3df; border-radius:16px; padding:22px; margin-bottom:18px; }
+.card h2 { font-size:17px; margin:0 0 16px; color:var(--text-primary); }
+.bars { display:flex; flex-direction:column; gap:10px; }
+.bar-row { display:grid; grid-template-columns:84px 1fr 44px; gap:10px; align-items:center; }
+.bar-label { font-size:13px; color:var(--text-secondary); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.bar-track { background:#f1f1ee; border-radius:4px; height:22px; position:relative; overflow:hidden; }
+.bar-fill { position:absolute; left:0; top:0; bottom:0; border-radius:4px; min-width:3px; }
+.bar-val { font-size:12.5px; color:var(--text-secondary); text-align:right; font-variant-numeric:tabular-nums; }
+.legend { display:flex; gap:16px; font-size:12.5px; color:var(--text-secondary); margin-top:12px; flex-wrap:wrap; }
+.lg { display:flex; align-items:center; gap:6px; }
+.lg i { width:14px; height:14px; border-radius:4px; display:inline-block; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th { text-align:left; color:var(--text-secondary); font-weight:600; padding:8px 10px; border-bottom:1px solid var(--grid); }
+td { padding:8px 10px; border-bottom:1px solid var(--grid); vertical-align:top; color:var(--text-secondary); }
+td.content { max-width:480px; color:var(--text-primary); }
+td.nick { white-space:nowrap; }
+td.likes { font-variant-numeric:tabular-nums; color:var(--series-1); font-weight:600; }
+.mono { font-variant-numeric:tabular-nums; }
+@media (prefers-color-scheme: dark) {
+  body { background:#1a1a19; color:#ffffff; }
+  .viz-root { color-scheme:dark; --surface-1:#212120; --text-primary:#ffffff; --text-secondary:#c3c2b7;
+    --text-muted:#8f8e88; --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70; --series-other:#7f8b94; --grid:#373735; }
+  .stat, .card { border-color:#373735; }
+  .bar-track { background:#2b2b29; }
+  .filters select { background:#2b2b29; border-color:#373735; color:#fff; }
+}
+</style></head>
+<body><div class="viz-root">
+<h1>小红书评论数据分析</h1>
+<div class="sub">数据源：runs/xhs-comments/（测试数据已隔离） · 生成于 2026-08-23 19:34</div>
+<div class="filters"><label>关键词：<select id="kwSel"></select></label></div>
+<div class="hero" id="hero"></div>
+<div class="cost-note" id="costNote"></div>
+<div class="card"><h2>评论 IP 属地分布</h2><div class="bars" id="ipBars"></div><div class="legend" id="ipLegend"></div></div>
+<div class="card"><h2>评论列表 · 按点赞排序（前 200 条）</h2>
+<table><thead><tr><th>昵称</th><th>评论</th><th>赞</th><th>IP</th><th>日期</th></tr></thead><tbody id="tbody"></tbody></table></div>
+<script>
+const D = {"keywords": ["中传计算机考研"], "defaultKw": "中传计算机考研", "groups": {"中传计算机考研": {"count": 20, "notes": 3, "likes": 24, "ip": [["北京", 6], ["山东", 4], ["河南", 3], ["河北", 1], ["西藏", 1], ["广西", 1], ["其他", 4]], "table": [{"nick": "我摘下了太阳", "content": "他进复试是材料评议➕初试成绩再评的 所以不能只看初试成绩的", "likes": "7", "ip": "北京", "time": "2026-08-21"}, {"nick": "一之同学", "content": "线划的低，不代表大家都是擦线进，今年不能说大炸，小炸吧", "likes": "4", "ip": "河北", "time": "2025-07-04"}, {"nick": "小红薯689306E4", "content": "主要是中传研究生官网发的复试名单只有一个大名单没专业，让你不知道复录比，进复试的人很多录的能有几个，小心别被忽悠了[笑哭R]", "likes": "4", "ip": "河南", "time": "2026-08-21"}, {"nick": "momo", "content": "我去怎么这么多要考中传的[石化R][石化R][石化R]感觉今年要爆了[石化R][石化R][石化R]", "likes": "3", "ip": "山东", "time": "2026-08-21"}, {"nick": "枫溪", "content": "因为这个线是可以提交材料评议的线[吧唧R]", "likes": "2", "ip": "西藏", "time": "2025-07-25"}, {"nick": "Enthrall", "content": "目标300分 双非 只过了四级 还有机会吗[哭惹R]", "likes": "1", "ip": "广西", "time": "2025-08-17"}, {"nick": "帅帅琪", "content": "你如果是网安的话应该是复试时候在我前面那个女生", "likes": "1", "ip": "山东", "time": "2026-08-10"}, {"nick": "咕噜噜", "content": "机试特别难，本科不是2的话基本不要", "likes": "1", "ip": "北京", "time": "2026-08-22"}, {"nick": "momo", "content": "别把个例当全部，就那一个大数据方向低，计算机技术录取最低分好像339，网安也是320多[笑哭R]", "likes": "1", "ip": "河南", "time": "2026-08-21"}, {"nick": "爱吃青笋的胡萝卜", "content": "材料评审是什么呀[哭惹R][哭惹R][哭惹R]", "likes": "0", "ip": "四川", "time": "2026-08-04"}, {"nick": "爱吃肉", "content": "马 王 张 北", "likes": "0", "ip": "河南", "time": "2025-10-14"}, {"nick": "小岛西岸.", "content": "你好我也想考中传的计网院的专硕 可以问问平均的录取分数线是多少吗", "likes": "0", "ip": "天津", "time": "2026-07-26"}, {"nick": "郭源潮", "content": "中传的妹妹啊，以后有机会来实习呀[偷笑R]", "likes": "0", "ip": "北京", "time": "2026-08-09"}, {"nick": "táo😵", "content": "大概猜到你是谁了 我是复试第二[doge]", "likes": "0", "ip": "广东", "time": "2026-07-26"}, {"nick": "風間", "content": "宝宝你好棒，方便问一下初试成绩吗", "likes": "0", "ip": "安徽", "time": "2026-08-15"}, {"nick": "Shaping", "content": "牛啊  [偷笑R]", "likes": "0", "ip": "北京", "time": "2026-07-25"}, {"nick": "飘飖兮若流风之回雪", "content": "恭喜[点赞R][点赞R][点赞R]", "likes": "0", "ip": "山东", "time": "2026-08-09"}, {"nick": "中传健体训练师", "content": "同学，恭喜上岸，我是咱们学校旁边健身房教练负责人 何教练 开学之后有没有打算来学校这边锻炼呀[呲牙]", "likes": "0", "ip": "北京", "time": "2026-08-03"}, {"nick": "帅帅琪", "content": "复试正常难度", "likes": "0", "ip": "山东", "time": "2026-08-21"}, {"nick": "embers", "content": "官网成绩是没有包含材料评议的成绩噢 我专门做工科408材料评议辅导滴 有需要的滴滴我[doge]", "likes": "0", "ip": "北京", "time": "2026-08-21"}]}}, "aiCost": {"count": 4, "costUsd": 0.0002, "input": 0, "output": 0, "estimated": true}};
+const R = document.querySelector('.viz-root');
+const c = (name) => getComputedStyle(R).getPropertyValue(name).trim();
+const IP_COLORS = [c('--series-1'), c('--series-2'), c('--series-3'), c('--series-other')];
+const sel = document.getElementById('kwSel');
+const cur = () => sel.value;
+
+function render() {
+  const g = D.groups[cur()];
+  if (!g) return;
+  // hero
+  document.getElementById('hero').innerHTML = '';
+  for (const [n, l] of [[g.count, '评论总数'], [g.notes, '笔记数'], [g.likes.toLocaleString(), '总点赞'], [Math.max(...g.table.map(x => x.likes), 0), '最高赞'], ['¥' + (D.aiCost.costUsd * 7.2).toFixed(2), 'AI 费用（估算）']])
+    document.getElementById('hero').insertAdjacentHTML('beforeend', `<div class="stat"><div class="num">${n}</div><div class="label">${l}</div></div>`);
+  // IP bars
+  const max = Math.max(...g.ip.map(i => i[1]), 1);
+  document.getElementById('ipBars').innerHTML = g.ip.map(([label, v]) => {
+    const i = g.ip.findIndex(x => x[0] === label);
+    return `<div class="bar-row"><div class="bar-label" title="${label}">${label}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${v / max * 100}%;background:${i < 3 ? IP_COLORS[i] : IP_COLORS[3]}"></div></div>
+      <div class="bar-val">${v}</div></div>`;
+  }).join('');
+  document.getElementById('ipLegend').innerHTML = [['--series-1','Top1 属地'],['--series-2','Top2 属地'],['--series-3','Top3 属地'],['--series-other','其余/未知']]
+    .map(([v, t]) => `<span class="lg"><i style="background:${c(v)}"></i>${t}</span>`).join('');
+  // table
+  document.getElementById('tbody').innerHTML = g.table.map(r => `<tr><td class="nick">${r.nick}</td><td class="content">${r.content}</td><td class="likes">${r.likes}</td><td>${r.ip || '—'}</td><td class="mono">${r.time}</td></tr>`).join('');
+  // cost note
+  const cst = D.aiCost;
+  document.getElementById('costNote').innerHTML = `本工具链 AI 花费说明：二级关键词扩展共调用 <b>${cst.count} 次</b>（DeepSeek V4，约 <b>¥${(cst.costUsd * 7.2).toFixed(3)}</b>），加上子代理/主会话代币，<b>全部合计约 ¥0.05 以内</b>——评论数据零模型成本（CloakBrowser 本地采集）。`;
+}
+
+sel.innerHTML = D.keywords.map(k => `<option value="${k}" ${k === D.defaultKw ? 'selected' : ''}>${k}</option>`).join('');
+sel.addEventListener('change', render);
+render();
+</script>
+</body></html>

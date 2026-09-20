@@ -1,0 +1,19 @@
+# 由 runtime/collector-python（CPython 3.12.13）解析并冻结，2026-08-24。
+# 重建环境时使用：python -m pip install -r requirements/collector.lock
+anyio==4.14.2
+certifi==2026.7.22
+cffi==2.1.1
+cloakbrowser==0.5.8
+cryptography==50.0.0
+greenlet==3.5.5
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.19
+packaging==26.3
+playwright==1.62.0
+pycparser==3.0
+pyee==13.0.1
+setuptools==83.0.0
+typing_extensions==4.16.0
+wheel==0.47.0

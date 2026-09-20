@@ -1,0 +1,10 @@
+{
+  "description": "007 → 006 可移植素材清单。from 相对本目录（vibe-motion-app），to 相对 project_006 项目根。type=static 只允许复制到 006/public；type=component 只允许登记到 006/video/src 且仍需人工移植。",
+  "assets": [
+    {
+      "from": "public/img/claude.svg",
+      "to": "public/img/claude.svg",
+      "type": "static"
+    }
+  ]
+}

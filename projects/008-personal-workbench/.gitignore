@@ -1,0 +1,8 @@
+node_modules/
+runs/
+asset-versions/
+runtime/
+*.log
+.env
+__pycache__/
+*.py[cod]

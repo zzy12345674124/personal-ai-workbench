@@ -1,0 +1,24 @@
+/* 乱码文字参数化素材 —— 布局样式（颜色/字号由 URL 参数在 script.js 里覆盖） */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 24px;
+  background: #0e100f; color: #fffce1;
+  font-family: Consolas, "Microsoft YaHei", monospace;
+  overflow: hidden;
+}
+#scrambleTitle {
+  font-size: 64px; letter-spacing: .06em;
+  color: #0ae448; font-family: Consolas, "Microsoft YaHei", monospace;
+  min-height: 1.3em; /* 乱码还原动画期间防抖动 */
+  text-shadow: 0 0 24px rgba(10, 228, 72, .3);
+  white-space: nowrap;
+  user-select: none;
+}
+.cfg-info {
+  position: fixed; bottom: 14px; left: 0; right: 0;
+  text-align: center; font-size: 12px;
+  color: rgba(255, 252, 225, .4); letter-spacing: .04em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}

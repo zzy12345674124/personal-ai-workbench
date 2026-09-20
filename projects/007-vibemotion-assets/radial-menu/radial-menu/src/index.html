@@ -1,0 +1,73 @@
+<div class="header">
+  <h1>Radial Menu</h1>
+  <p>Menu items spring out with <code>elastic.out(1, 0.5)</code>. Toggle <code>easeReverse</code> and choose an ease type and speed to see how they affect the reverse animation.</p>
+
+  <div class="controls-row">
+    <div class="toggle-bar">
+      <label class="toggle" for="easeToggle">
+        <input type="checkbox" id="easeToggle" role="switch" aria-label="Toggle easeReverse">
+        <span class="toggle-track"></span>
+        <span class="toggle-thumb"></span>
+      </label>
+      <span class="toggle-label" id="toggleLabel">easeReverse :</span>
+    </div>
+
+    <div class="control-group">
+      <label for="easeSelect"></label>
+      <select id="easeSelect" disabled>
+        <option value="true" selected>true (mirror entrance)</option>
+        <option value="power3.out">power3.out</option>
+        <option value="power3.in">power3.in</option>
+        <option value="expo.in">expo.in</option>
+        <option value="expo.out">expo.out</option>
+        <option value="back.in(1.7)">back.in</option>
+        <option value="back.out(1.7)">back.out</option>
+        <option value="none">none (linear)</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label for="speedSlider">speed</label>
+      <input type="range" id="speedSlider" min="1" max="3" step="0.1" value="1" />
+      <span class="speed-val" id="speedVal">1x</span>
+    </div>
+  </div>
+
+  <div class="status" id="status"></div>
+</div>
+
+<div class="fab-wrap" id="fabWrap">
+  <button class="fab-item" aria-label="Search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <circle cx="11" cy="11" r="8" />
+      <path d="m21 21-4.35-4.35" />
+    </svg>
+  </button>
+  <button class="fab-item" aria-label="Edit">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+    </svg>
+  </button>
+  <button class="fab-item" aria-label="Upload">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="17 8 12 3 7 8" />
+      <line x1="12" y1="3" x2="12" y2="15" />
+    </svg>
+  </button>
+  <button class="fab-item" aria-label="Share">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <circle cx="18" cy="5" r="3" />
+      <circle cx="6" cy="12" r="3" />
+      <circle cx="18" cy="19" r="3" />
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+    </svg>
+  </button>
+  <button class="fab" id="fabBtn" aria-label="Toggle actions menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <line x1="5" y1="12" x2="19" y2="12" />
+    </svg>
+  </button>
+</div>

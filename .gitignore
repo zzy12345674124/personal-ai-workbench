@@ -1,0 +1,49 @@
+# 密钥与本地配置
+.env
+.env.*
+!.env.example
+config/llm.local.json
+*.pem
+*.key
+*secret*
+*credential*
+*cookie*
+
+# 真实运行数据
+runtime/
+runs/
+profiles/
+asset-versions/
+data/
+public-data/comments.anonymized.json
+tmp/
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.jsonl
+*.log
+public-data/comments.sample.report.json
+
+# 多媒体运行产物
+*.mp4
+*.wav
+*.webm
+
+# 依赖与缓存
+node_modules/
+dist/
+build/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.vitest/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 本地项目过程记录
+项目日志.md

@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["fact_issues", "logic_gaps", "pacing_issues", "unfeasible_shots", "suggestions", "recommend_pass"],
+  "properties": {
+    "fact_issues": { "type": "array", "items": { "type": "string" } },
+    "logic_gaps": { "type": "array", "items": { "type": "string" } },
+    "pacing_issues": { "type": "array", "items": { "type": "string" } },
+    "unfeasible_shots": { "type": "array", "items": { "type": "string" } },
+    "suggestions": { "type": "array", "items": { "type": "string" } },
+    "recommend_pass": { "type": "boolean" }
+  }
+}

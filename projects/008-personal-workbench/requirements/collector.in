@@ -1,0 +1,3 @@
+# 采集运行时的直接依赖；完整传递依赖在创建隔离环境后生成 collector.lock。
+# Python 合同：CPython 3.12.x（不使用全局 Python 3.14）。
+cloakbrowser==0.5.8

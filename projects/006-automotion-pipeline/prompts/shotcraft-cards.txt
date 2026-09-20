@@ -1,0 +1,26 @@
+镜头卡词汇表（card 字段从下列选择，每镜至多一卡；选了卡就不必再写其他内容字段）：
+Fracture：5×5 瓦片 3D 碎片按波纹聚合成海报，hold 亮字后碎片炸出画面（开场"从混沌到成形"）
+LetterspaceMaterialize：大字距字标逐笔描画结晶成型（片头/片尾品牌字标登场）
+StrokeSegmentBuild：标题拆成断笔乱序点亮，末段语义"啪"地成立（产品名/大数字悬念揭晓，整片≤1次）
+Carousel3D：8 张卡环形自转轮播（作品集/模板库/集成清单循环展示）
+MorphFromPrimitive：正圆呼吸后变形为圆角卡轮廓，内容淡入（图标/卡轮廓入场）
+SvgShapeMorph：闭合轮廓平滑形变往返+色相漂移（抽象概念"形态转换/自适应"表达）
+RadialWave：圆点阵列按波纹错峰点亮（"系统上电"开场/数据网格建立镜头）
+CardStack：卡片逐张弹入叠摞后展成 3D 扇面（"我们有一组东西"的产品段落）
+DrawSvgTrace：墨线沿元素轮廓描一圈把它"画"出来（单个卡片/图表/标题被点名入场）
+CursorFlyover：整页俯瞰后相机飞到四角特写，光标指点留涟漪（单页产品功能巡览）
+SteepTiltGlide：页面 60° 侧立滑移掠过镜头（长页面/多区块 UI 炫技巡览）
+SlowPushIn：镜头从远缓缓推向主体（关键信息聚焦入场）
+Basic3DScene：卡片散布 3D 空间，相机依次飞行对齐（概念/路线图/三步法空间化讲述）
+OdometerDigitRoll：全屏巨号数字逐位滚轮停稳（王牌指标全屏亮相"10x/99.98%"）
+TimelineTravel：镜头沿时间轴横移掠过版本刻度（changelog/里程碑/发展史）
+BeforeAfterSliderScrub：前后对比拉杆扫过"显影"（AI 增强/优化效果对比）
+SplitFlapFlip：机场翻牌屏字标题逐字符咔哒落定（开场/章节大标题、倒计时）
+GradientWordSweep：关键词被渐变彩光扫过"充能"（标语卖点词能量段）
+TypewriterErrorRetype：打字机逐字打出后删改纠错（代码/文案"现场输入"感）
+MarkerUnderlineTitle：马克笔关键词下划线快速描画（标题强调单个词，手写感）
+AuroraBloomBgFlip：浅底紫橙柔光后压暗到近黑（叙事转折点"多年以来→一切都变了"）
+ScanBracketSweep：L 形取景括号+扫描线往复读文档（"正在解析/校验"过程镜头）
+BrandFrameSnap：品牌色画框包住全屏内容，模式切换硬翻色（双模式产品片包装层）
+GradientTransition：背景渐变类型平滑过渡（氛围底/章节底色连续变奏）
+NeonTripleMarquee：三行霓虹跑马灯复读口号（片尾主题词余韵收尾）

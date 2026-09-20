@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "narration", "storyboard", "review_resolution"],
+  "properties": {
+    "title": { "type": "string" },
+    "narration": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "storyboard": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["index", "visual", "narration_index"],
+        "properties": {
+          "index": { "type": "integer" },
+          "visual": { "type": "string" },
+          "narration_index": { "type": "integer" },
+          "type": { "type": "string", "enum": ["title", "contrast", "cards", "decision", "flow", "warning", "metrics", "ladder", "checklist", "shotcraft"] },
+          "theme": { "type": "string", "enum": ["tech", "paper", "data"] },
+          "title": { "type": "string" },
+          "subtitle": { "type": "string" },
+          "leftTitle": { "type": "string" },
+          "leftDesc": { "type": "string" },
+          "rightTitle": { "type": "string" },
+          "rightDesc": { "type": "string" },
+          "cards": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["label", "desc"], "properties": { "label": { "type": "string" }, "desc": { "type": "string" } } } },
+          "branches": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["label", "desc"], "properties": { "label": { "type": "string" }, "desc": { "type": "string" } } } },
+          "steps": { "type": "array", "items": { "type": "string" } },
+          "metrics": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["label", "value"], "properties": { "label": { "type": "string" }, "value": { "type": "string" } } } },
+          "checklist": { "type": "array", "items": { "type": "string" } },
+          "levels": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["label", "desc"], "properties": { "label": { "type": "string" }, "desc": { "type": "string" } } } },
+          "warnings": { "type": "array", "items": { "type": "string" } },
+          "card": { "type": "string" }
+        }
+      }
+    },
+    "review_resolution": { "type": "array", "items": { "type": "string" } }
+  }
+}

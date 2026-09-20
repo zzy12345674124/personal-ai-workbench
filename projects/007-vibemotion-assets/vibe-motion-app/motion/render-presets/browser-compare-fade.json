@@ -1,0 +1,12 @@
+{
+  "actSeconds": 4,
+  "folderCount": 4,
+  "act1Title": "REMOTION",
+  "act1Caption": "每个项目各自下载一个无头浏览器",
+  "act2Title": "VIBE MOTION",
+  "act2Caption": "全局共享同一个无头浏览器",
+  "transition": "fade",
+  "chromeGlow": true,
+  "videoWidth": 1080,
+  "videoHeight": 1440
+}

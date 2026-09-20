@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "summary", "key_points", "script_outline", "sources"],
+  "properties": {
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "key_points": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "script_outline": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "sources": { "type": "array", "items": { "type": "string" } }
+  }
+}

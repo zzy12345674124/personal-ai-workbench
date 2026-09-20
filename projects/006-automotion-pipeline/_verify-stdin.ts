@@ -1,0 +1,12 @@
+import { runClaudeWithSchema, resolveClaudeBin } from './src/adapters/cli.js';
+import { readFile } from 'node:fs/promises';
+const draft = await readFile('D:/Count/Obsidian/main/project_008_个人工作台/runs/run-1785999972797/run-1785999973085/codex_draft.json', 'utf8');
+const template = JSON.parse(await readFile('prompts/text-pipeline.json', 'utf8'));
+const prompt = template.challenge.replace('{draft}', draft);
+console.log(`promptLen=${prompt.length}`);
+const schema = JSON.parse(await readFile('schemas/flash-review.schema.json', 'utf8'));
+const t0 = Date.now();
+const r = await runClaudeWithSchema(resolveClaudeBin(), prompt, schema, { timeoutMs: 480_000, cwd: process.cwd() });
+console.log(`exit=${r.exitCode} timedOut=${r.timedOut} ms=${Date.now() - t0} stdoutLen=${r.stdout.length}`);
+console.log('ON_TOPIC=' + (r.stdout.includes('刃牙') || r.stdout.includes('范马') ? 'YES' : 'NO'));
+console.log('head=' + r.stdout.slice(0, 300));

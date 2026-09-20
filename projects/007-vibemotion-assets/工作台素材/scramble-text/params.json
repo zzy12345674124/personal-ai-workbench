@@ -1,0 +1,11 @@
+{
+  "title": "乱码文字（参数化）",
+  "params": [
+    { "key": "text", "label": "内容", "type": "text", "default": "个人工作台", "desc": "乱码还原的文字内容" },
+    { "key": "speed", "label": "速度", "type": "number", "default": "1", "min": 0.1, "max": 5, "step": 0.1, "desc": "动画速度倍率：1=原速，2=快一倍，0.5=慢一倍" },
+    { "key": "repeat", "label": "循环播放", "type": "bool", "default": "true", "desc": "关闭后只播一次" },
+    { "key": "size", "label": "字号", "type": "number", "default": "64", "min": 16, "max": 200, "step": 1, "desc": "px" },
+    { "key": "color", "label": "文字颜色", "type": "color", "default": "#0ae448" },
+    { "key": "bg", "label": "背景色", "type": "color", "default": "#0e100f" }
+  ]
+}

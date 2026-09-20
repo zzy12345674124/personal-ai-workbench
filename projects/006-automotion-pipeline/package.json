@@ -1,0 +1,27 @@
+{
+  "name": "automotion-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal Harness: Codex-led, DeepSeek-challenged automation pipeline; AutoMotion video app",
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "ajv": "^8.20.0",
+    "tsx": "^4.23.7",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.506",
+    "@remotion/transitions": "^4.0.506",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "remotion": "^4.0.506"
+  }
+}

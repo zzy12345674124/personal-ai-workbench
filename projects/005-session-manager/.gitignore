@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+build/
+dist/*
+!dist/会话管家.exe
+!dist/会话管家-Windows11.exe
+*.spec

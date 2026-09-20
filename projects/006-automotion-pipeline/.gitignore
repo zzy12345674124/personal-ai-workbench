@@ -1,0 +1,9 @@
+node_modules/
+dist/
+runs/
+video/src/generated/
+public/audio/
+*.log
+.DS_Store
+public/materials/
+vendor/

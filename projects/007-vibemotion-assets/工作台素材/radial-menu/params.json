@@ -1,0 +1,10 @@
+{
+  "title": "FAB 放射菜单",
+  "params": [
+    { "key": "speed", "label": "速度", "type": "number", "default": "1", "min": 0.1, "max": 5, "step": 0.1, "desc": "动画速度倍率：1=原速，2=快一倍，0.5=慢一倍" },
+    { "key": "accent", "label": "主题色", "type": "color", "default": "#0ae448", "desc": "主题强调色（默认原色）" },
+    { "key": "auto", "label": "自动演示", "type": "bool", "default": "true", "desc": "加载后自动开合一轮" },
+    { "key": "radius", "label": "展开半径", "type": "number", "default": "120", "min": 60, "max": 400, "step": 10, "desc": "菜单项展开半径（px）" },
+    { "key": "title", "label": "标题文字", "type": "text", "default": "", "desc": "留空=原标题" }
+  ]
+}
