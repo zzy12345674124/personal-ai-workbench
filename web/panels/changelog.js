@@ -29,7 +29,7 @@ export async function render(stage) {
   let versions = [];
 
   try {
-    const response = await fetch('/changelog.json', { cache: 'no-store' });
+    const response = await fetch('./changelog.json', { cache: 'no-store' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     versions = (await response.json()).versions ?? [];
   } catch (error) {
