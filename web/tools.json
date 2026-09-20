@@ -46,7 +46,7 @@
       "id": "changelog",
       "name": "更新日志",
       "icon": "📋",
-      "panel": "panels/changelog.js"
+      "panel": "panels/changelog.js?v=4ee10d6"
     }
   ]
 }
